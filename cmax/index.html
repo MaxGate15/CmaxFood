@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMax Food Delivery</title>
+  <link rel="stylesheet" href="cmax.css">
+</head>
+<body>
+  <!-- LOGIN PAGE -->
+  <section id="login-page" class="page">
+    <div class="login-container">
+      <h1>CMax Food</h1>
+      <p>Food Delivery Website</p>
+      <form id="login-form">
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+      </form>
+      <div class="social-login">
+        <p>Or sign in with</p>
+        <img src="google.jpeg" alt="Google">
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU PAGE -->
+  <section id="menu-page" class="page hidden">
+    <header>
+      <h2>Our Menu</h2>
+      <span id="cart-icon">🛒<span id="cart-count">(0)</span></span>
+    </header>
+    <div class="menu-container">
+      <!-- Food Items -->
+      <div class="food-card" data-name="Jollof Rice" data-price="12" data-image="images/rice.jpg">
+        <img src="jollof.jpeg" alt="Jollof Rice">
+        <h3>Jollof Rice</h3>
+        <p>GH₵12</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Pasta Alfredo" data-price="15" data-image="images/pasta.jpg">
+        <img src="pasta.jpeg" alt="Pasta Alfredo">
+        <h3>Pasta Alfredo</h3>
+        <p>GH₵15</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Fried Chicken" data-price="10" data-image="images/chicken.jpg">
+        <img src="chick.jpeg" alt="Fried Chicken">
+        <h3>Fried Chicken</h3>
+        <p>GH₵10</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Pizza" data-price="18" data-image="images/pizza.jpg">
+        <img src="pizza.jpeg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>GH₵18</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Yam Fries" data-price="8" data-image="images/yam-fries.jpg">
+        <img src="yam.jpeg" alt="Yam Fries">
+        <h3>Yam Fries</h3>
+        <p>GH₵8</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Shawarma" data-price="10" data-image="images/shawarma.jpg">
+        <img src="sharwama.jpeg" alt="Shawarma">
+        <h3>Shawarma</h3>
+        <p>GH₵10</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Coke" data-price="5" data-image="images/coke.jpg">
+        <img src="coke.jpeg" alt="Coke">
+        <h3>Coke</h3>
+        <p>GH₵5</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Burger" data-price="20" data-image="images/burger.jpg">
+        <img src="burger.jpeg" alt="Burger">
+        <h3>Burger</h3>
+        <p>GH₵20</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Salad" data-price="12" data-image="images/salad.jpg">
+        <img src="salad.jpeg" alt="Salad">
+        <h3>Salad</h3>
+        <p>GH₵12</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Ice Cream" data-price="10" data-image="images/ice-cream.jpg">
+        <img src="ice cream.jpeg" alt="Ice Cream">
+        <h3>Ice Cream</h3>
+        <p>GH₵10</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Smoothie" data-price="15" data-image="images/smoothie.jpg">
+        <img src="Smoothie.jpeg" alt="Smoothie">
+        <h3>Smoothie</h3>
+        <p>GH₵15</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="food-card" data-name="Grilled Chicken" data-price="25" data-image="images/grilled-fish.jpg">
+        <img src="grilled.jpeg" alt="Grilled Fish">
+        <h3>Grilled Chicken</h3>
+        <p>GH₵25</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cart Total -->
+    <div id="cart-total-container">
+      <p class="cart-total">Total: GH₵0.00</p>
+    </div>
+  </section>
+
+  <script src="cmax.js"></script>
+</body>
+</html>
